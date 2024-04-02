@@ -1,0 +1,44 @@
+/* Style the product image */
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Style the product details container */
+  .product-details-container {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  }
+
+  /* Style the form and button in the product section */
+  .product-form {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Style the modal header */
+  .modal-header {
+    background-color: #007bff; /* Blue color for modal header */
+    color: #fff; /* White text color */
+  }
+
+  /* Style the modal title */
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  /* Style the modal body */
+  .modal-body {
+    padding: 20px;
+  }
+
+  /* Style the review card */
+  .review-card {
+    margin-bottom: 20px;
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  }

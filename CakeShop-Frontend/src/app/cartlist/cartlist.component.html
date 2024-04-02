@@ -1,0 +1,61 @@
+<div class="card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col">
+                        <h4><b>Shopping Cart</b></h4>
+                    </div>
+                    <div class="col align-self-center text-right text-muted">{{carts.length}} items</div>
+                </div>
+            </div>
+            <div class="row border-top border-bottom" *ngFor="let c of carts; let i = index">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src='{{c.cake.image}}'></div>
+                    <div class="col">
+                        <div class="row text-muted">{{c.cake.occasion}}</div>
+                        <div class="row">{{c.cake.name}}</div>
+                    </div>
+                    <div class="col">
+                        <a href="#">-</a><a href="#" class="border">{{c.quantity}}</a><a href="#">+</a>
+                    </div>
+                    <div class="col"> 
+                        {{c.cake.price|currency:'INR'}}
+                        <span *ngIf="c.quantity > 0"> x {{c.quantity}} = {{c.quantity * c.cake.price | currency:'INR'}}</span>
+                        <button class="btn1" (click)="deleteCartItem(c.id)"><i class="fas fa-trash-alt"></i>
+                            Delete</button>
+                        <button class="btn btn-dark" [routerLink]="['/checkout',c.cake.id]"><i
+                                class="fas fa-credit-card"></i>
+                            CheckOut</button>
+                    </div>
+                </div>
+            </div>
+            <div class="back-to-shop"><a [routerLink]="['/products']">&leftarrow;</a><span class="text-muted">Back to
+                    shop</span></div>
+        </div>
+        <div class="col-md-4 summary">
+            <div>
+                <h5><b>Summary</b></h5>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col" style="padding-left:0;">ITEMS {{carts.length}}</div>
+                <div class="col text-right">Price :&nbsp;&#8377; {{price.total_price|json}}</div>
+            </div>
+            <form>
+                <p>SHIPPING</p>
+                <select>
+                    <option class="text-muted">Standard-Delivery- &euro;</option>
+                </select>
+                <p>GIVE CODE</p>
+                <input id="code" placeholder="Enter your code">
+            </form>
+            <!-- <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                <div class="col">TOTAL PRICE</div>
+                <div class="col text-right">&euro; </div>
+            </div> -->
+
+            <button class="btn">CHECKOUT</button>
+        </div>
+    </div>
+</div>

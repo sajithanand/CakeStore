@@ -1,0 +1,320 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CakeStore",
+    "dateExported": "2024-03-07T16:06:20.764Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e6dbcada-9088-4e13-a541-642ed6bc70af",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "UserCreate",
+            "url": "localhost:8000/api/register/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-27T09:44:46.831Z",
+            "modified": "2024-03-02T16:07:29.809Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "first_name",
+                        "value": "midhun"
+                    },
+                    {
+                        "name": "last_name",
+                        "value": "ak"
+                    },
+                    {
+                        "name": "email",
+                        "value": "midhunak12@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "midhun"
+                    },
+                    {
+                        "name": "password",
+                        "value": "midhunak@123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "15735713-da80-4e2f-9055-1e606126d3b1",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "CakeList",
+            "url": "localhost:8000/api/cakes/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-27T14:56:42.642Z",
+            "modified": "2024-03-02T16:08:20.765Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token d6f8bb80fa5db158128233e0e1a82521f457b3aa"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aed13411-1485-46f2-a809-17900fdd0633",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "Token",
+            "url": "localhost:8000/api/token/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-27T14:57:23.271Z",
+            "modified": "2024-03-05T17:41:10.960Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "maddy"
+                    },
+                    {
+                        "name": "password",
+                        "value": "maddy@123"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "24dbc840-1bc9-4eb1-a1d2-3f18327a7ab4",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "Categories",
+            "url": "localhost:8000/api/cakes/categories/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-01T05:41:40.222Z",
+            "modified": "2024-03-02T16:09:43.930Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token d6f8bb80fa5db158128233e0e1a82521f457b3aa"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ca1d8f74-d54f-438f-bf6c-57cfff10ae34",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "AddToCart",
+            "url": "localhost:8000/api/cakes/2/add_to_cart/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T06:29:47.723Z",
+            "modified": "2024-03-02T16:10:20.782Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token d6f8bb80fa5db158128233e0e1a82521f457b3aa"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "quantity",
+                        "value": "3"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "08df8a3f-1b17-453b-a91e-b633b040e9ea",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "PlaceOrder",
+            "url": "localhost:8000/api/cakes/2/place_order/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-01T07:00:02.980Z",
+            "modified": "2024-03-05T16:56:44.119Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token a43f3f730c597e8b8af2cbdbfc961f4c8cff62eb"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "address",
+                        "value": "sdfghj"
+                    },
+                    {
+                        "name": "matter",
+                        "value": "dfghjk"
+                    },
+                    {
+                        "name": "state",
+                        "value": "Kerala"
+                    },
+                    {
+                        "name": "zipcode",
+                        "value": "673309"
+                    },
+                    {
+                        "name": "city",
+                        "value": "kannur"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "56aaedf0-25dd-4abb-b20b-76cd9c5f15dc",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "CartView",
+            "url": "localhost:8000/api/carts/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-01T07:49:34.733Z",
+            "modified": "2024-03-02T18:21:01.373Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token d6f8bb80fa5db158128233e0e1a82521f457b3aa"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dd613362-2f10-4be6-b9be-25d465ac20a8",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "AddReview",
+            "url": "localhost:8000/api/cakes/2/add_review/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-02T16:18:52.816Z",
+            "modified": "2024-03-02T16:21:02.085Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token d6f8bb80fa5db158128233e0e1a82521f457b3aa"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "Very good taste"
+                    },
+                    {
+                        "name": "rating",
+                        "value": "4"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5286f523-835d-43ac-bf83-044ef8b6d3f4",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "CartDelete",
+            "url": "localhost:8000/api/CartDel/33/cart_delete/",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-02T18:04:19.787Z",
+            "modified": "2024-03-03T10:25:33.882Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token a43f3f730c597e8b8af2cbdbfc961f4c8cff62eb"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e95f04c7-13a8-4c4d-9345-94f1b7c586e5",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "Total Price",
+            "url": "localhost:8000/api/carts/total_price/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-03T07:09:13.996Z",
+            "modified": "2024-03-03T07:10:27.943Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token d6f8bb80fa5db158128233e0e1a82521f457b3aa"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dd21696e-6c9f-4ca4-8ab7-104d42ff7197",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "OrderDelete",
+            "url": "localhost:8000/api/orders/7/order_delete/",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-03-04T11:21:46.754Z",
+            "modified": "2024-03-04T11:23:27.143Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token a43f3f730c597e8b8af2cbdbfc961f4c8cff62eb"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "86ad14c6-7763-4409-893e-5cdd14fe12ef",
+            "colId": "7ab38fcf-cc2f-46e2-aeb4-78d262e6539a",
+            "containerId": "",
+            "name": "orders",
+            "url": "localhost:8000/api/orders/",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-03-05T16:48:56.702Z",
+            "modified": "2024-03-05T17:41:28.060Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 8d10304e8e77b040226703d42e8038050b38446b"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}
